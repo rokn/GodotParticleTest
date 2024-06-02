@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://bh3rmhf35au4f"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_w4lcg"]
+particle_flag_disable_z = true
+emission_shape_offset = Vector3(2.08165e-12, 100, 2.08165e-12)
+emission_shape = 3
+emission_box_extents = Vector3(100, 2.08165e-12, 2.08165e-12)
+direction = Vector3(2.08165e-12, -1, 2.08165e-12)
+spread = 0.0
+initial_velocity_min = 750.0
+initial_velocity_max = 860.0
+gravity = Vector3(2.08165e-12, 2.08165e-12, 2.08165e-12)
+scale_min = 0.8
+scale_max = 3.0
+turbulence_noise_strength = 0.0
+turbulence_noise_scale = 10.0
+turbulence_noise_speed_random = 1.43
+turbulence_influence_min = 0.276
+turbulence_influence_max = 0.48
+
+[node name="Speed Lines" type="GPUParticles2D"]
+amount = 15
+process_material = SubResource("ParticleProcessMaterial_w4lcg")
+trail_enabled = true
+trail_lifetime = 0.01
+trail_sections = 2
+trail_section_subdivisions = 1
